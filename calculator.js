@@ -11,6 +11,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
 function getCurrentUIValues() {
   return {
+    // explicitly a num value
     amount: +(document.getElementById("loan-amount").value),
     years: +(document.getElementById("loan-years").value),
     rate: +(document.getElementById("loan-rate").value),
@@ -63,3 +64,4 @@ function updateMonthly(monthly) {
   // update the UI to show the value
   monthlyUI.innerText = "$" + monthly;
 }
+console.log("hi")
